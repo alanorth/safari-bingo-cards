@@ -155,8 +155,8 @@ if __name__ == "__main__":
 
     # Get a random list of animal IDs. We will build a square grid using the
     # "across" parameter passed by the user.
-    logger.info(f"Generating random sample of {animals_df.shape[0]} animals...")
     animal_ids = animals_df["id"].sample(args.across * args.across)
+    logger.info(f"Generated random sample of {animals_df.shape[0]} animals...")
 
     # Slice those random animals from the dataframe
     animals_df_random = animals_df[animals_df["id"].isin(animal_ids)]
