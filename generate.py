@@ -174,6 +174,7 @@ if __name__ == "__main__":
     # Join all thumbnails together in an array of x across with a padding of 2
     # pixels between each square.
     joined = pyvips.Image.arrayjoin(thumbnails, across=args.across, shim=2)
+    logger.info(f"Generated card with a {args.across}x{args.across} grid of animals...")
 
     joined.jpegsave(args.output_file, optimize_coding=True, strip=True)
     logger.info(f"Wrote {args.output_file}")
