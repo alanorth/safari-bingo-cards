@@ -10,7 +10,13 @@ Once the requirements are satisfied you can generate a card. By default it gener
 
 ```console
 $ ./generate.py -i data/animals.csv -o out.jpg
+[INFO] Generated random sample of 32 animals...
+[INFO] > Creating thumbnail for Helmeted guineafowl...
+[INFO] Generated card with a 4x4 grid of animals...
+[INFO] Wrote out.jpg
 ```
+
+The script will download the images from Wikipedia, generate thumbnails for the sampled animals, and output a bingo card as a JPEG file.
 
 # Requirements
 Set up a Python 3.11+ virtual environment and install the requirements:
