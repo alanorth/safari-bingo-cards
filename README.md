@@ -6,9 +6,19 @@ Fun proof of concept to generate random wildlife bingo cards for safaris with da
 </p>
 
 # Usage
+Once the requirements are satisfied you can generate a card. By default it generates a 4x4 grid with 16 images:
 
 ```console
 $ ./generate.py -i data/animals.csv -o out.jpg
+```
+
+# Requirements
+Set up a Python 3.11+ virtual environment and install the requirements:
+
+```console
+$ python3 -m .venv
+$ source .venv/bin/activate
+$ pip install -r requirements.lock
 ```
 
 # TODO
