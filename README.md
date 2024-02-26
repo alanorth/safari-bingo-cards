@@ -11,6 +11,13 @@ Fun proof of concept to generate random wildlife bingo cards for safaris with da
 $ ./generate.py -i data/animals.csv -o out.jpg
 ```
 
+# TODO
+
+- Credit photographers — these photos are all some variation of CC-BY so we need to give attribution
+- Add filtering by region — the metadata already exists, though perhaps needs to be adjusted
+- Refactor — perhaps needs to be more object oriented
+- Make a web frontend — I can imagine a light frontend that would shuffle the images in realtime and allow generation of a number of cards
+
 # License
 This work is licensed under the [GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
