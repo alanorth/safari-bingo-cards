@@ -25,7 +25,7 @@ def create_thumbnail(animal):
     # check if the file has been downloaded
     if not os.path.isfile(image_path):
         logger.error(
-            Fore.YELLOW + f"> Missing image for {animal['common_name']}." + Fore.RESET
+            Fore.RED + f"> Missing image for {animal['common_name']}." + Fore.RESET
         )
     # check if we already have a thumbnail
     elif os.path.isfile(thumbnail_path):
