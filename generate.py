@@ -36,11 +36,6 @@ def create_thumbnail(animal):
                 + Fore.RESET
             )
     else:
-        logger.info(
-            Fore.GREEN
-            + f"> Creating thumbnail for {animal['common_name']}..."
-            + Fore.RESET
-        )
         vips_image = pyvips.Image.new_from_file(image_path)
         # Crop to a 600x600 square using smartcrop to focus attention
         # See: https://stackoverflow.com/questions/47852390/making-a-huge-image-mosaic-with-pyvips
@@ -71,6 +66,13 @@ def create_thumbnail(animal):
         # conversion twice.
         vips_thumbnail.vipssave(thumbnail_path, strip=True)
 
+        logger.info(
+            Fore.GREEN
+            + f"> Created thumbnail for {animal['common_name']}..."
+            + Fore.RESET
+        )
+
+
     return
 
 
@@ -87,10 +89,6 @@ def download_image(animal):
                 + Fore.RESET
             )
     else:
-        logger.info(
-            Fore.GREEN + f"> Downloading {animal['common_name']}..." + Fore.RESET
-        )
-
         headers = {
             "User-Agent": "safari-bingo-cards-bot/0.1 (https://git.mjanja.ch/alanorth/safari-bingo-cards)"
         }
@@ -99,6 +97,10 @@ def download_image(animal):
             with open(image_path, "wb") as fd:
                 for chunk in response:
                     fd.write(chunk)
+
+            logger.info(
+                Fore.GREEN + f"> Downloaded {animal['common_name']}..." + Fore.RESET
+            )
         else:
             logger.error(
                 Fore.RED
