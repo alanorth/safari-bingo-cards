@@ -43,21 +43,15 @@ def create_thumbnail(animal):
             600, height=600, linear=True, crop=animal["vips_smartcrop"]
         )
         # Create a temporary image with text using Pango markup, which can use
-        # some HTML. This allows us to use consistent font sizes as opposed to
-        # pyvips.Image.text's width and height which are maximums in pixels.
-        # We also use RGBA to make the background transparent, which we need so
-        # we can see the rectangle we will draw next.
+        # some HTML. This allows us to use consistent font sizes (as opposed to
+        # pyvips.Image.text's width and height parameters, which are maximums
+        # in pixels). Note that we need to use RGBA here or else the text image
+        # shows up as a white block when we overlay it on the thumbnail.
         #
         # See: https://docs.gtk.org/Pango/pango_markup.html
         text = pyvips.Image.text(
-            f'<span foreground="white" size="48pt">{animal["common_name"]}</span>',
+            f'<span foreground="white" background="#702D3E" size="48pt">{animal["common_name"]}</span>',
             rgba=True,
-        )
-        # Draw a rectangle on top of our image with the same dimensions as our
-        # text and position it relative to the bottom using the height. The RGB
-        # values are ILRI red (#702D3E).
-        vips_thumbnail = vips_thumbnail.draw_rect(
-            [112, 45, 62], 0, 600 - text.height, text.width, text.height, fill=True
         )
         vips_thumbnail = vips_thumbnail.composite(
             text, "over", x=0, y=600 - text.height
