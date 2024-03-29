@@ -32,3 +32,4 @@ id,date_added,common_name,other_names,region,country,reference,image,vips_smartc
 31,2024-02-26,Helmeted guineafowl,,Sub-Saharan Africa,Kenya,https://en.wikipedia.org/wiki/Helmeted_guineafowl,https://upload.wikimedia.org/wikipedia/commons/a/af/Numida_meleagris_-Serengeti_National_Park%2C_Tanzania-8_%281%29.jpg,centre,
 32,2024-02-26,Black-faced sandgrouse,,Eastern Africa,Kenya,https://en.wikipedia.org/wiki/Black-faced_sandgrouse,https://upload.wikimedia.org/wikipedia/commons/0/04/Tanzania_0607_cropped_Nevit.jpg,high,
 33,2024-02-26,Reticulated giraffe,Somali giraffe,Eastern Africa,Kenya,https://en.wikipedia.org/wiki/Reticulated_giraffe,https://upload.wikimedia.org/wikipedia/commons/4/44/Giraffa_camelopardalis_reticulata_01%2C_flip.jpg,low,
+34,2024-03-29,Coke's hartebeest,Kongoni,Eastern Africa,Kenya,https://en.wikipedia.org/wiki/Coke%27s_hartebeest,https://upload.wikimedia.org/wikipedia/commons/5/5c/Coke%27s_Hartebeest.jpg,attention,
