@@ -19,7 +19,7 @@ $ ./generate.py -i data/animals.csv -o out.jpg
 The script will download the images from Wikipedia, generate thumbnails for the sampled animals, and output a bingo card as a JPEG file.
 
 # Requirements
-Set up a Python 3.11+ virtual environment and install the requirements:
+Set up a Python 3.10+ virtual environment and install the requirements:
 
 ```console
 $ python3 -m .venv
