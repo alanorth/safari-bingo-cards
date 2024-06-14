@@ -66,7 +66,6 @@ def create_thumbnail(animal):
             + Fore.RESET
         )
 
-
     return
 
 
