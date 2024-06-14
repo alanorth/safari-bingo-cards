@@ -33,3 +33,4 @@ id,date_added,common_name,other_names,region,country,reference,image,vips_smartc
 32,2024-02-26,Yellow-necked francolin,Yellow-necked spurfowl,Eastern Africa,Kenya,https://en.m.wikipedia.org/wiki/Yellow-necked_spurfowl,https://upload.wikimedia.org/wikipedia/commons/3/3e/Francolin.jpg,attention,
 33,2024-02-26,Reticulated giraffe,Somali giraffe,Eastern Africa,Kenya,https://en.wikipedia.org/wiki/Reticulated_giraffe,https://upload.wikimedia.org/wikipedia/commons/4/44/Giraffa_camelopardalis_reticulata_01%2C_flip.jpg,low,
 34,2024-03-29,Coke's hartebeest,Kongoni,Eastern Africa,Kenya,https://en.wikipedia.org/wiki/Coke%27s_hartebeest,https://upload.wikimedia.org/wikipedia/commons/5/5c/Coke%27s_Hartebeest.jpg,attention,
+35,2024-06-14,Grévy's zebra,Imperial zebra,Eastern Africa,"Kenya,Ethiopia",https://en.wikipedia.org/wiki/Gr%C3%A9vy%27s_zebra,https://upload.wikimedia.org/wikipedia/commons/7/74/Grevy%27s_Zebra_Stallion.jpg,centre,
