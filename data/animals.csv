@@ -34,3 +34,5 @@ id,date_added,common_name,other_names,region,country,reference,image,vips_smartc
 33,2024-02-26,Reticulated giraffe,Somali giraffe,Eastern Africa,Kenya,https://en.wikipedia.org/wiki/Reticulated_giraffe,https://upload.wikimedia.org/wikipedia/commons/4/44/Giraffa_camelopardalis_reticulata_01%2C_flip.jpg,low,
 34,2024-03-29,Coke's hartebeest,Kongoni,Eastern Africa,Kenya,https://en.wikipedia.org/wiki/Coke%27s_hartebeest,https://upload.wikimedia.org/wikipedia/commons/5/5c/Coke%27s_Hartebeest.jpg,attention,
 35,2024-06-14,Grévy's zebra,Imperial zebra,Eastern Africa,"Kenya,Ethiopia",https://en.wikipedia.org/wiki/Gr%C3%A9vy%27s_zebra,https://upload.wikimedia.org/wikipedia/commons/7/74/Grevy%27s_Zebra_Stallion.jpg,centre,
+36,2024-06-16,Common dwarf mongoose,,Eastern Africa,"Kenya,Ethiopia",https://en.wikipedia.org/wiki/Common_dwarf_mongoose,https://upload.wikimedia.org/wikipedia/commons/0/05/Dwarf_Mongoose_%28Helogale_parvula%29_%286002158282%29.jpg,centre,
+37,2024-06-16,Grey crowned crane,Crested crane,Eastern Africa,"Kenya,Ethiopia",https://en.wikipedia.org/wiki/Grey_crowned_crane,https://upload.wikimedia.org/wikipedia/commons/c/cc/Grey-crowned-crane.jpg,attention,
