@@ -24,7 +24,7 @@ Set up a Python 3.10+ virtual environment and install the requirements:
 ```console
 $ python3 -m .venv
 $ source .venv/bin/activate
-$ pip install -r requirements.lock
+$ pip install -r requirements.txt
 ```
 
 # TODO
