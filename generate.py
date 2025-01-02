@@ -129,6 +129,12 @@ if __name__ == "__main__":
         type=argparse.FileType("r", encoding="UTF-8"),
     )
     parser.add_argument(
+        "-r",
+        "--reserve",
+        help="Reserve to limit selection of animals to (Kapiti, Nairobi National Park, Ol Pejeta, or Oserongoni).",
+        required=False,
+    )
+    parser.add_argument(
         "-o",
         "--output-file",
         help="Path to output file (JPEG).",
@@ -147,6 +153,11 @@ if __name__ == "__main__":
 
     # Open the CSV
     animals_df = pd.read_csv(args.csv_file)
+
+    if args.reserve:
+        logger.info(f"Limiting animals to reserve: {args.reserve}")
+
+        animals_df = animals_df.query("reserve.str.contains(@args.reserve)")
 
     # Get a random list of animal IDs. We will build a square grid using the
     # "across" parameter passed by the user.
