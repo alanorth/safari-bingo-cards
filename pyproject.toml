@@ -15,10 +15,6 @@ dependencies = [
 readme = "README.md"
 requires-python = ">= 3.10"
 
-[project.scripts]
-generate = "safari_bingo_cards:main"
-
-
 [tool.uv]
 dev-dependencies = [
     "isort~=5.13.2",
