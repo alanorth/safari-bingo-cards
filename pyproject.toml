@@ -15,8 +15,8 @@ dependencies = [
 readme = "README.md"
 requires-python = ">= 3.10"
 
-[tool.uv]
-dev-dependencies = [
+[dependency-groups]
+dev = [
     "isort~=6.0.1",
     "ipython~=8.37.0",
 ]
