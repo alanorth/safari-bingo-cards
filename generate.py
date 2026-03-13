@@ -131,7 +131,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-r",
         "--reserve",
-        help="Reserve to limit selection of animals to (Kapiti, Nairobi National Park, Ol Pejeta, or Oserongoni).",
+        help="Reserve to limit selection of animals to (Kapiti, Nairobi National Park, Ol Pejeta, Oserongoni, Tsavo, or Mara).",
         required=False,
     )
     parser.add_argument(
